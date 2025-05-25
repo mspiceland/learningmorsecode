@@ -582,6 +582,53 @@ footer {
     font-size: 0.9rem;
 }
 
+/* Floating Discord Button */
+.floating-discord-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: #5865F2; /* Discord brand color */
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 4px 20px rgba(88, 101, 242, 0.3);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    transform: translateY(0);
+}
+
+.floating-discord-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 25px rgba(88, 101, 242, 0.4);
+    background: #4752C4; /* Slightly darker on hover */
+}
+
+.floating-discord-btn i {
+    font-size: 1.5rem;
+}
+
+/* Hide text on mobile */
+@media (max-width: 768px) {
+    .floating-discord-btn span {
+        display: none;
+    }
+    .floating-discord-btn {
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 50%;
+        justify-content: center;
+        padding: 0;
+    }
+    .floating-discord-btn i {
+        font-size: 1.75rem;
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 992px) {
     .hero h1 {
