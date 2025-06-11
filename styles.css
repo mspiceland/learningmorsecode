@@ -582,6 +582,21 @@ footer {
     font-size: 0.9rem;
 }
 
+/* Video Link */
+.video-link {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 0.9em;
+    color: var(--primary-color); /* Optional: Match link color to primary theme color */
+    text-decoration: none; /* Optional: Remove underline if desired */
+}
+
+.video-link:hover {
+    text-decoration: underline; /* Optional: Add underline on hover */
+    color: var(--secondary-color); /* Optional: Change color on hover */
+}
+
 /* Floating Discord Button */
 .floating-discord-btn {
     position: fixed;
